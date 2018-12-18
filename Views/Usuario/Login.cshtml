@@ -1,0 +1,34 @@
+﻿@model UsuarioModel
+
+
+
+<div style="text-align:center; margin: 0 35%;">
+
+    <form asp-controller="Usuario" asp-action="ValidarLogin">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" asp-for="Email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Senha:</label>
+            <input type="password" class="form-control" asp-for="Senha">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Lembrar-me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+    <br />
+    @{
+        try
+        {
+            if (TempData["Invalido"].ToString() != null)
+            {
+                <div class="alert alert-danger">
+                    <strong>Erro!</strong> @TempData["Invalido"]
+                </div>
+            }
+        }
+        catch { }
+    }
+</div>
