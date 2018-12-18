@@ -17,7 +17,7 @@ namespace MyFinance.Models
         [Required(ErrorMessage = "Informe o Saldo inicial da Conta!")]
         public double Saldo{ get; set; }
         public int Usuario_Id { get; set; }
-        IHttpContextAccessor HttpContextAccessor;
+        public IHttpContextAccessor HttpContextAccessor { get; set; }
 
         public ContaModel()
         {
@@ -48,17 +48,24 @@ namespace MyFinance.Models
                 item.Id = int.Parse(dt.Rows[i]["ID"].ToString());
                 item.Nome = dt.Rows[i]["NOME"].ToString();
                 item.Saldo = double.Parse(dt.Rows[i]["SALDO"].ToString());
-                item.Id = int.Parse(dt.Rows[i]["USUARIO_ID"].ToString());
+                item.Usuario_Id = int.Parse(dt.Rows[i]["USUARIO_ID"].ToString());
                 lista.Add(item);
             }
 
             return lista;
         }
 
-            public void Insert()
+        public void Insert()
         {
             string id_usuario_logado = HttpContextAccessor.HttpContext.Session.GetString("IdUsuarioLogado");
             string sql = $"INSERT INTO CONTA (NOME, SALDO, USUARIO_ID) VALUES('{Nome}','{Saldo}', '{id_usuario_logado}')";
+            DAL objDAL = new DAL();
+            objDAL.ExecutarComandoSQL(sql);
+        }
+        
+        public void Excluir(int id_conta)
+        {
+            new DAL().ExecutarComandoSQL("DELETE FROM CONTA WHERE ID = " + id_conta);
         }
     }
 }

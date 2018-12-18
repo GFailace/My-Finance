@@ -31,6 +31,7 @@ namespace MyFinance.Controllers
         {
             if(ModelState.IsValid)
             {
+                formulario.HttpContextAccessor = HttpContextAccessor;
                 formulario.Insert();
                 return RedirectToAction("Index");
             }
@@ -41,6 +42,14 @@ namespace MyFinance.Controllers
         public IActionResult CriarConta()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult ExcluirConta(int id)
+        {
+            ContaModel objConta = new ContaModel(HttpContextAccessor);
+            objConta.Excluir(id);
+            return RedirectToAction("Index");
         }
     }
 }

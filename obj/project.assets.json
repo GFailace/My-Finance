@@ -12681,23 +12681,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GFCunha\\.nuget\\packages\\": {},
+    "C:\\Users\\guifa\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GFCunha\\source\\repos\\MyFinance\\MyFinance\\MyFinance.csproj",
+      "projectUniqueName": "C:\\Users\\guifa\\source\\repos\\MyFinance\\MyFinance\\MyFinance.csproj",
       "projectName": "MyFinance",
-      "projectPath": "C:\\Users\\GFCunha\\source\\repos\\MyFinance\\MyFinance\\MyFinance.csproj",
-      "packagesPath": "C:\\Users\\GFCunha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GFCunha\\source\\repos\\MyFinance\\MyFinance\\obj\\",
+      "projectPath": "C:\\Users\\guifa\\source\\repos\\MyFinance\\MyFinance\\MyFinance.csproj",
+      "packagesPath": "C:\\Users\\guifa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guifa\\source\\repos\\MyFinance\\MyFinance\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\GFCunha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\guifa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

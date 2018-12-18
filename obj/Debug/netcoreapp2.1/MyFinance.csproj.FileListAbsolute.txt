@@ -74,3 +74,14 @@ C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\
 C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Transacao\Dashboard.g.cshtml.cs
 C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Home\Ajuda.g.cshtml.cs
 C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Conta\CriarConta.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Conta\CriarConta.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Conta\Index.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Home\Ajuda.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Home\Menu.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\PlanoConta\Index.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Transacao\Dashboard.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Transacao\Extrato.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Transacao\Index.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Registrar.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Sucesso.g.cshtml.cs
+C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\PlanoConta\CriarPlanoConta.g.cshtml.cs
