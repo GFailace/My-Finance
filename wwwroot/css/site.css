@@ -35,3 +35,7 @@ body {
         display: none;
     }
 }
+
+table, th{
+    text-align:center;
+}
