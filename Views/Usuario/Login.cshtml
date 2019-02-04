@@ -1,34 +1,39 @@
 ﻿@model UsuarioModel
+@{
+    Layout = "../Shared/_LayoutLogin.cshtml";
+}
+<div class="container" style="width:300px; text-align:center; margin: 10% auto; background-color:#f5f5f5; padding-bottom:2%; border-radius:20px;">
+    
+    <div>
+        <h1>GoFinance</h1>
 
-
-
-<div style="text-align:center; margin: 0 35%;">
-
-    <form asp-controller="Usuario" asp-action="ValidarLogin">
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" asp-for="Email">
-        </div>
-        <div class="form-group">
-            <label for="pwd">Senha:</label>
-            <input type="password" class="form-control" asp-for="Senha">
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox"> Lembrar-me</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Entrar</button>
-    </form>
-    <br />
-    @{
-        try
-        {
-            if (TempData["Invalido"].ToString() != null)
+        @{ try
             {
-                <div class="alert alert-danger">
-                    <strong>Erro!</strong> @TempData["Invalido"]
-                </div>
+                if (TempData["Invalido"].ToString() != null)
+                {
+                    <div class="alert alert-danger">
+                        <strong>Erro!</strong> @TempData["Invalido"]
+                    </div>
+                }
             }
+            catch { }
         }
-        catch { }
-    }
+        <form asp-controller="Usuario" asp-action="ValidarLogin">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" asp-for="Email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Senha:</label>
+                <input type="password" class="form-control" asp-for="Senha">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Lembrar-me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="button" class="btn btn-success" onclick="javascript:window.location.href='../Usuario/Registrar'">Registrar-se</button>
+        </form>
+
+    </div>
+
 </div>

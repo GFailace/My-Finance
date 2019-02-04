@@ -39,3 +39,28 @@ body {
 table, th{
     text-align:center;
 }
+.navbar-nav a{
+    color: white;
+}
+
+.icon-bar {
+    background: white;
+}
+
+.navbar-nav a:hover {
+    color: #8898ba;
+    background: transparent;
+    transition: 0.5s ease;
+}
+.navbar-nav:hover {
+    background: transparent;
+}
+.navbar, .navbar-header, .navbar-brand, .navbar-collapse {
+    background: #222442;
+    color: #FFFFFF;
+    border:none;
+}
+
+#NomeUsuarioLogado{
+    color:#cecece;
+}

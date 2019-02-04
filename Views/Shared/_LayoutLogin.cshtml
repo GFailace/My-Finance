@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoFinance</title>
+    <title>MyFinance</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -15,40 +15,19 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-</head>
-<body onload="CarregarUsuarioLogado()">
-    <nav class="navbar navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Menu" class="navbar-brand">GoFinance</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Menu">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">Sobre</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contato</a></li>
-                </ul>
-                @using Microsoft.AspNetCore.Http;
-                @inject IHttpContextAccessor HttpContextAccessor
-                <div id="NomeUsuarioLogado"></div>
-            </div>
-        </div>
-    </nav>
 
-    <partial name="_CookieConsentPartial" />
+    <style>
+        body {
+            background-image:url(../../images/bg.jpg);
+        }
+    </style>
+</head>
+<body>
+        <partial name="_CookieConsentPartial" />
 
     <div class="container body-content" style="padding-top:25px;">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2019 - GoFinance</p>
-        </footer>
+        
     </div>
 
     <environment include="Development">
@@ -75,18 +54,4 @@
     @RenderSection("Scripts", required: false)
 
 </body>
-<script>
-    function CarregarUsuarioLogado() {
-        var nome = '@HttpContextAccessor.HttpContext.Session.GetString("NomeUsuarioLogado")';
-
-        if (nome != "") {
-        var divNome = document.getElementById("NomeUsuarioLogado");
-        divNome.innerHTML = "Olá " + nome + " <a href='../Usuario/Login/0'>(Sair)</a>";
-            divNome.style = "color: #FFFFFF; text-align:right; padding:12px;"
-        }
-        else {
-            window.location.href = "../Usuario/Login";
-        }
-    }
-</script>
 </html>

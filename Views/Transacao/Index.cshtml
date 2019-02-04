@@ -1,10 +1,7 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
 }
-
 <h3>Minhas Transações</h3>
-
 <div>
     <table class="table table-bordered">
         <thead>
@@ -30,7 +27,7 @@
                         <td>@item.Id.ToString()</td>
                         <td>@item.Data.ToString()</td>
                         <td>@item.Tipo.ToString().Replace("R", "Receita").Replace("D", "Despesa")</td>
-                        <td>R$ @item.Valor.ToString()</td>
+                        <td>@item.Valor.ToString()</td>
                         <td>@item.Descricao.ToString()</td>
                         <td>@item.NomeConta.ToString()</td>
                         <td>@item.DescricaoPlanoConta.ToString()</td>
@@ -39,11 +36,8 @@
             }
         }
     </table>
-
     <button type="button" class="btn btn-primary" onclick="RegistrarTransacao()">Registrar Transação</button>
-
-    <script>
-        function RegistrarTransacao()
+    <script>function RegistrarTransacao()
         {
             window.location.href = "../Transacao/Registrar";
         }
@@ -55,7 +49,5 @@
 
         function Editar(id) {
             window.location.href = "../Transacao/Registrar/" + id;
-        }
-    </script>
+        }</script>
 </div>
-
