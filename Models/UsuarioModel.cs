@@ -16,6 +16,8 @@ namespace MyFinance.Models
         public string Nome { get; set;}
 
         [Required(ErrorMessage = "Campo email é obrigatório!")]
+        [DataType(DataType.EmailAddress)]
+        [EmailAddress(ErrorMessage ="E-mail informado é inválido.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo senha é obrigatório!")]
