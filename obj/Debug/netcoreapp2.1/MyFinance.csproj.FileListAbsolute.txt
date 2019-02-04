@@ -38,7 +38,6 @@ C:\Users\GFCunha\source\repos\MyFinance\MyFinance\bin\Debug\netcoreapp2.1\MyFina
 C:\Users\GFCunha\source\repos\MyFinance\MyFinance\bin\Debug\netcoreapp2.1\MyFinance.pdb
 C:\Users\GFCunha\source\repos\MyFinance\MyFinance\bin\Debug\netcoreapp2.1\MyFinance.Views.dll
 C:\Users\GFCunha\source\repos\MyFinance\MyFinance\bin\Debug\netcoreapp2.1\MyFinance.Views.pdb
-C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\MyFinance.csprojAssemblyReference.cache
 C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\MyFinance.csproj.CoreCompileInputs.cache
 C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\MyFinance.RazorAssemblyInfo.cache
 C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\MyFinance.RazorAssemblyInfo.cs
@@ -85,3 +84,8 @@ C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Vi
 C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Registrar.g.cshtml.cs
 C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Sucesso.g.cshtml.cs
 C:\Users\guifa\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\PlanoConta\CriarPlanoConta.g.cshtml.cs
+C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\PlanoConta\CriarPlanoConta.g.cshtml.cs
+C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Transacao\Registrar.g.cshtml.cs
+C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Transacao\ExcluirTransacao.g.cshtml.cs
+C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutLogin.g.cshtml.cs
+C:\Users\GFCunha\source\repos\MyFinance\MyFinance\obj\Debug\netcoreapp2.1\MyFinance.csprojAssemblyReference.cache
